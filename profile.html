@@ -1,0 +1,183 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your-Nanme-portfolio</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0%;
+        padding: 0%;
+        background-color: antiquewhite;
+    }
+    header{
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 2rem 0;
+        position: relative;
+
+}
+.header-content h1{font-size: 2.5rem;}
+.profile-picture{
+    width: 100px;
+height: 100px;
+border-radius: 75%;
+object-fit: cover;
+position: absolute;
+top: 40px;
+left: 75px;
+
+}
+nav{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+}
+nav ul{ list-style-type: none;
+
+padding: 0%;}
+nav ul li{display: inline;
+margin: 20px;}
+
+nav ul li a{ text-decoration: none;
+color: #fff;}
+
+.section-content {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px  rgba(0, 0, 0%, 0.1);
+border:2px;
+border-color: black;
+border-style: solid;
+
+}
+footer{
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+}
+ul{list-style-type: square;
+padding-left: 20px; }
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="./image/IMG-20230916-WA0007.jpg" class="profile-picture">
+            <h1>NandhiniRamalingam</h1>
+        </div>
+    </header>
+<nav>
+    <ul>
+        <li><a href="#About"></a>About</li>
+        <li><a href="#Education"></a>Education</li>
+        <li><a href="#Skills"></a>Skills</li>
+        <li><a href="#Project"></a>Project</li>
+        <li><a href="#Resume"></a>Resume</li>
+    </ul>
+</nav>
+<section id="about">
+    <div class="section-content">
+<h2>About me</h2>
+<p>Hello Everyone! This is Nandhini and i am a computer science student.</p>
+    </div>
+</section>
+
+<section id="Education">
+    <div class="section-content">
+        <H2>Education</H2>
+<h2>B.SC.</h2>
+<P>Ganesar College of Arts and Science,Melaisivapuri</P>
+    </div>
+</section>
+
+<section id="Skills">
+    <div class="section-content">
+<h2>Skills</h2>
+<ul>
+    <li>Excel</li>
+    <li> programming</li>
+    <li>Typing</li>
+    <li>python</li>
+    <li>java</li>
+ </ul>
+    </div>
+</section>
+
+<section id="Project">
+    <div class="section-content">
+        <h2>projects</h2>
+<ul>
+
+    <li><a href="a">project 1</a></li>
+    <li><a href="a">project 2</a></li>
+</ul>
+    </div>
+</section>
+
+<section id="resume">
+    <div class=" section-content">
+        <center>
+<h2>Resume</h2>
+<a href="Linked In"> Linked In</a>
+    
+        </center></div>
+</section>
+
+<footer>
+    <p>&copy; 2023 NandhiniRamalingam</p>
+</footer>
+
+
+<script>
+    //smooth scrolling to section when clicking on navigation links 
+    document.querySelectorAll('a[href^="#"]').forEach(anchor =>{
+        anchor.addEventListener('click',function(e){
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href').substring(1);
+            const targetId = document.getElementById(targetId);
+
+            if(targetElement){
+                window.scrollTo({
+                    top: targetElement.offsetToP,
+                    behavior:'smooth'
+
+                });
+               }
+
+            });
+        
+         });
+
+</script>
+
+
+
+
+
+    
+</body>
+
+
+
+
+
+</html>
